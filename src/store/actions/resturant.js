@@ -15,17 +15,17 @@ export const fetchResturantStart = ()=>{
     }
 }
 
-export const fetchResturantSuccess = (restuarnt)=>{
+export const fetchResturantSuccess = (data)=>{
     return {
         type:actionType.FETCH_RESTURANT_SUCCESS,
-        restuarnt:restuarnt
+        data:data,
     }
 }
 
 export const fetchResturantFail = (error)=>{
     return {
         type:actionType.FETCH_RESTURANT_FAIL,
-        error:error
+        error:error,
     }
 }
 
