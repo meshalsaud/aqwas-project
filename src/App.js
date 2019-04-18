@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import {connect} from 'react-redux';
+import BaseRouter from './components/Routes';
 import * as actions from './store/actions/resturant';
+import './App.css';
 
 class App extends Component {
   componentDidMount(){
@@ -13,20 +13,8 @@ class App extends Component {
   render() {
   
     return (
-      <div className="App" >
-        <div>
- 
-         <h1>
-           {this.props.name}
-         </h1>
-         <h2>
-           {this.props.age}
-         </h2>
-           <h2>
-             {this.props.loading}
-           </h2>
-         
-    </div>
+      <div className="App" {...this.props} >
+        <BaseRouter />
       </div>
     );
   }
