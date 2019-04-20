@@ -3,11 +3,7 @@ import {updateObject} from '../utility';
 
 const initialState = {
     loading:"false",
-    data:{
-        "name":"meshal",
-        "age":22,
-        "with":false
-    },
+    data:{},
     error:null
 }
 

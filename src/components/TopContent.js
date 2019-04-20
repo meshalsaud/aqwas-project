@@ -3,16 +3,17 @@ import '../App.css';
 
 class TopContent extends Component{
     render(){
+        const {name, cat, rating} = this.props.data
         return(
             <div className='container-fluid text-center top-section'>
             <div class="d-flex flex-column justify-content-center">
                 <div class="p-1 item1">
                 <h2>
-                Burger-fuil| برجر فيول
+                {name}
                 </h2>
                     </div>
                 <div class="p-1 item2">
-                    <span>9/10 - برجر</span>
+                    <span>{rating}/10 - {cat}</span>
                 </div>
                 <div class="d-flex content-icons justify-content-center p-2">
                     <div class="px-3 border-right">
@@ -35,7 +36,7 @@ class TopContent extends Component{
                 </div>
                 </div>
                 <div class="p-1 border-top mt-2 item2">
-                <span className='icon-chevron-up icon-2x '></span>
+                <span className='icon-chevron-up icon-2x'></span>
                 </div>
             </div>
             </div>

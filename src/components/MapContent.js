@@ -28,7 +28,7 @@ class MapContent extends Component{
               <div id='map' role="region" aria-label='resturant' tabIndex="0"> </div>
               <div class="btn-group new-resturant" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn1 mr-1"><span className='icon-wrench fa-4x'></span></button>
-                        <button type="button" class="btn btn2">اقترح</button>
+                        <button type="button" class="btn btn2" onClick={this.props.fetchData}> اقتراح اخر</button>
                         
                 </div>
             </div>
