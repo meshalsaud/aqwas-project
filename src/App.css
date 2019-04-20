@@ -1,9 +1,9 @@
 .content-cover {
   min-height: 100vh;
   background-color: rgb(43,98,101,0.9);
-  color:rgb(222,239,240);
 }
-.icon-food{
+
+.big-icon{
   font-size: 70px;
   border: 7px #FFF solid;
   border-radius: 80px;
@@ -11,7 +11,6 @@
 }
 @import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
 .lead{
-  
   font-size: 30px;
   margin-top:75px;
   margin-bottom: 50px;
@@ -22,18 +21,129 @@
   height: 50px;
   padding:10px;
   color:#417174;
-  font-size: 20px;
+  font-size: 25px !important;
   font-weight: bold;
 }
 .btn1{
   width: 60px
 }
+.btn2{
+  width:250px;
+}
 .icon-wrench{
   font-size: 15px
 }
+
+/*Navbar style */
+.navbar{
+  background-color: rgb(43,98,101,0.8) !important;
+}
+.nav-icon{
+  border:2px solid;
+  border-radius: 80px;
+  padding:5px;
+}
+.navbar-light{
+  color: rgb(255,253,255,0.9) !important;
+}
+
+#map-container{
+  overflow:hidden;
+  position:relative;
+  height:100vh;
+  z-index: 1;
+}
+#map{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.top-section{
+  background-color: rgb(255,253,255,0.9);
+  height: 190px;
+}
+
+.item1{
+  color:#577d70;
+}
+.item2{
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.content-icons{
+  color:#6c757d;
+  cursor: pointer;
+}
+.icon-chevron-up{
+  color: #999999c9;
+  cursor: pointer;
+}
+
+
+
 @media (max-width:700px){
   .lead{font-size: 20px;}
+  h2{font-size: 1.75em}
+  
 }
 @media (max-width:400px){
   .lead{font-size:15px}
+  
+}
+/* new resturant button breakpoint */
+
+@media (min-width:700px){
+  .new-resturant {
+    position: fixed;
+    left: 40%;
+    top: 90%;
+    z-index: 3;
+    
+}
+
+}
+@media (min-width:575px) and (max-width:699px){
+  .new-resturant {
+    position: fixed;
+    left: 35%;
+    top: 90%;
+    z-index: 3;
+}
+}
+@media (min-width:450px) and (max-width:574px){
+  .new-resturant {
+    position: fixed;
+    left: 25%;
+    top: 90%;
+    z-index: 3;
+}
+}
+@media (max-width:450px){
+  .new-resturant {
+    position: fixed;
+    left: 15%;
+    top: 90%;
+    z-index: 3;
+}
+}
+
+@media (max-width: 450px){
+
+.new-resturant {
+    position: fixed;
+    left: 9%;
+    top: 90%;
+    z-index: 3;
+}
+}
+@media (max-width:320px){
+  .new-resturant{
+    position: fixed;
+    left: 1%;
+    top: 90%;
+    z-index: 3;
+  }
 }
