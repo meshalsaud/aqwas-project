@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
+import {GOOGLE_MAPS_API_KEY} from '../credentials';
 import {GoogleApiWrapper, Map, Marker} from 'google-maps-react';
 import '../App.css';
 
 
 class MapContent extends Component{
-    
+
     render(){
-        
         const {google, lat, lng} = this.props
         return(
-        
                 <div class="container-fluid p-0 m-0">
                 <div id='map-container' role="application">
                     <div id='map' role="region" aria-label='resturant' tabIndex="0">
@@ -42,5 +41,5 @@ class MapContent extends Component{
 }
 
 export default (GoogleApiWrapper({
-    apiKey:("AIzaSyDu3X5XvbtwAIubnvQ0Hq625UMcu8l433k")
+    apiKey:(GOOGLE_MAPS_API_KEY)
 })(MapContent));

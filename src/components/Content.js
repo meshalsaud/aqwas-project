@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {GOOGLE_MAPS_API_KEY} from '../credentials';
 import {GoogleApiWrapper} from 'google-maps-react';
 import * as actions from '../store/actions/resturant';
 import Navbar from './Navbar';
@@ -49,5 +50,5 @@ const mapDispatchToProps = dispatch =>{
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(GoogleApiWrapper({
-    apiKey:'AIzaSyDu3X5XvbtwAIubnvQ0Hq625UMcu8l433k'
+    apiKey:(GOOGLE_MAPS_API_KEY)
 })(Content))
