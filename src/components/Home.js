@@ -5,9 +5,7 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 
 class Home extends Component{
-    componentDidMount(){
-        this.props.fetchData()
-    }
+    
     render(){
         return (
             <div className="content-cover justify-content-center container-fluid text-center d-flex p-3 mx-auto flex-column">
@@ -20,10 +18,10 @@ class Home extends Component{
                     <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn1 mr-1"><span className='icon-wrench fa-4x'></span></button>
                         <Link to="/resturant">
-                        <button type="button" class="btn">اقترح</button>
+                        <button type="button" class="btn" >اقترح</button>
                         </Link>
 
-                    
+            
                     </div>
                     
                 </main>   
